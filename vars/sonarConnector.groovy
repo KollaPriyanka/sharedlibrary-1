@@ -6,9 +6,9 @@ def jsonSlurper = new JsonSlurper()
 def resultJson = jsonSlurper.parseText(data)
 def ProjectName = resultJson.pname
 def ProjectKey = resultJson.pkey
-def QualityGateName = resultJson.qname
-def GateId = resultJson.gateid
-def ProjectId = resultJson.projectid
+//def QualityGateName = resultJson.qname
+//def GateId = resultJson.gateid
+//def ProjectId = resultJson.projectid
 //def projUrl = resultJson.url
 
 httpRequest authentication: 'sonar_credentials', contentType: "APPLICATION_JSON", 
