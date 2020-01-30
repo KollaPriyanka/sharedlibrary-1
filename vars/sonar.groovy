@@ -27,7 +27,7 @@ httpRequest authentication: 'sonar_credentials', contentType: "APPLICATION_JSON"
         
    }""",*/ url: "http://ec2-3-16-33-107.us-east-2.compute.amazonaws.com:9000/api/projects/create?key=${ProjectName}&name=${ProjectKey}"
 	
-httpRequest authentication: 'sonar_credentials', contentType: "APPLICATION_JSON", 
+/*httpRequest authentication: 'sonar_credentials', contentType: "APPLICATION_JSON", 
     
     httpMode: 'POST',/* requestBody: 
   """{
@@ -43,7 +43,7 @@ httpRequest authentication: 'sonar_credentials', contentType: "APPLICATION_JSON"
         "format": "maven2"
 	}
         
-   }""",*/ url: "http://3.16.33.107:9000/api/qualitygates/create?name=${QualityGateName}"
+   }""", url: "http://3.16.33.107:9000/api/qualitygates/create?name=${QualityGateName}"*/
 }
 	def call(){
 def request = libraryResource 'sonarConnectorData.json'
