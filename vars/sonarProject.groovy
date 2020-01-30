@@ -10,7 +10,21 @@ def ProjectKey = resultJson.pkey
 
 httpRequest authentication: 'sonar_credentials', contentType: "APPLICATION_JSON", 
     
-    httpMode: 'POST',  url: "http://ec2-3-16-33-107.us-east-2.compute.amazonaws.com:9000/api/projects/create?key=${ProjectName}&name=${ProjectKey}"
+    httpMode: 'POST',/* requestBody: 
+  """{
+    	"data":
+	{
+		"repoType": "hosted",
+        "id": ${rid},
+        "name": ${repoName},
+        "repoPolicy": "RELEASE",
+        "provider": "maven2",
+        "providerRole": "org.sonatype.nexus.proxy.repository.Repository",
+        "exposed": true,
+        "format": "maven2"
+	}
+        
+   }""",*/  url: "http://ec2-3-16-33-107.us-east-2.compute.amazonaws.com:9000/api/projects/create?key=${ProjectName}&name=${ProjectKey}"
 }
 	def call(){
 def request = libraryResource 'sonarConnectorData.json'
