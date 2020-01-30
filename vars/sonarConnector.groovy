@@ -13,7 +13,8 @@ def ProjectId = resultJson.projectid
 
 httpRequest authentication: 'sonar_credentials', contentType: "APPLICATION_JSON", 
     
-    httpMode: 'POST', url: "http://ec2-3-16-33-107.us-east-2.compute.amazonaws.com:9000/api/projects/create?key=${ProjectKey}&name=${ProjectName}"
+    httpMode: 'POST',
+	url: "http://ec2-3-16-33-107.us-east-2.compute.amazonaws.com:9000/api/projects/create?key=${ProjectKey}&name=${ProjectName}"
 
 /*httpRequest authentication: 'sonar_credentials', contentType: "APPLICATION_JSON", 
     
