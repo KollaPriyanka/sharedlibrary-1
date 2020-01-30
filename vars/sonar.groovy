@@ -27,6 +27,6 @@ httpRequest authentication: 'sonar_credentials', contentType: "APPLICATION_JSON"
    }""",*/ url: "http://ec2-3-16-33-107.us-east-2.compute.amazonaws.com:9000/api/projects/create?key=${ProjectKey}&name=${ProjectName}"
 }
 	def call(){
-def request = libraryResource 'data.json'
+def request = libraryResource 'sonarConnectorData.json'
 createRepo(request)
 }
