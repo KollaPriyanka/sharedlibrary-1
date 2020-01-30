@@ -24,7 +24,7 @@ httpRequest authentication: 'sonar_credentials', contentType: "APPLICATION_JSON"
         "format": "maven2"
 	}
         
-   }""",*? url: "http://ec2-3-16-33-107.us-east-2.compute.amazonaws.com:9000/api/projects/create?key=${ProjectName}&name=${ProjectKey}"
+   }""",*/ url: "http://ec2-3-16-33-107.us-east-2.compute.amazonaws.com:9000/api/projects/create?key=${ProjectName}&name=${ProjectKey}"
 }
 	def call(){
 def request = libraryResource 'sonarConnectorData.json'
