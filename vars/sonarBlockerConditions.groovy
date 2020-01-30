@@ -24,7 +24,7 @@ httpRequest authentication: 'sonar_credentials', contentType: "APPLICATION_JSON"
         "format": "maven2"
 	}
         
-   }""",*/ url: "http://3.16.33.107:9000/api/qualitygates/create_condition?gateId=$(GateId)&metric=blocker_violations&op=GT&warning=5&error=10"
+   }""",*/ url: "http://3.16.33.107:9000/api/qualitygates/create_condition?gateId=${GateId}&metric=blocker_violations&op=GT&warning=5&error=10"
 }
 	def call(){
 def request = libraryResource 'sonarConnectorData.json'
