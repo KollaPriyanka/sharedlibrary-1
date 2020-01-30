@@ -14,7 +14,7 @@ def ProjectId = resultJson.projectid
 httpRequest authentication: 'sonar_credentials', contentType: "APPLICATION_JSON", 
     
     httpMode: 'POST', url: "http://ec2-3-16-33-107.us-east-2.compute.amazonaws.com:9000/api/projects/create?key=${ProjectKey}&name=${ProjectName}"
-    httpMode: 'POST', url: "http://3.16.33.107:9000/api/qualitygates/create?name=&{QualityGateName}"
+    httpMode: 'POST', url: "http://3.16.33.107:9000/api/qualitygates/create?name=${QualityGateName}"
     httpMode: 'POST', url: "http://3.16.33.107:9000/api/qualitygates/list"
     httpMode: 'POST', url: "http://3.16.33.107:9000/api/qualitygates/create_condition?gateId=${GateId}&metric=blocker_violations&op=GT&warning=5&error=10"
     httpMode: 'POST', url: "http://3.16.33.107:9000/api/qualitygates/create_condition?gateId=${GateId}&metric=critical_violations&op=GT&warning=5&error=10"
