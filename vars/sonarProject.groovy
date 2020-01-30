@@ -5,7 +5,7 @@ createRepo(String data){
 def jsonSlurper = new JsonSlurper() 
 def resultJson = jsonSlurper.parseText(data)
 def ProjectName = resultJson.pname
-def Projectkey = resultJson.pkey
+def ProjectKey = resultJson.pkey
 //def projUrl = resultJson.url
 
 httpRequest authentication: 'sonar_credentials', contentType: "APPLICATION_JSON", 
