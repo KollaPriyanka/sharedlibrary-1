@@ -15,7 +15,7 @@ httpRequest authentication: 'sonar_credentials', contentType: "APPLICATION_JSON"
     
     httpMode: 'POST', url: "http://ec2-3-16-33-107.us-east-2.compute.amazonaws.com:9000/api/projects/create?key=${ProjectKey}&name=${ProjectName}"
 
-httpRequest authentication: 'sonar_credentials', contentType: "APPLICATION_JSON", 
+/*httpRequest authentication: 'sonar_credentials', contentType: "APPLICATION_JSON", 
     
     httpMode: 'POST', url: "http://ec2-3-16-33-107.us-east-2.compute.amazonaws.com:9000/api/qualitygates/create?name=${QualityGateName}"
 	
@@ -34,7 +34,7 @@ httpRequest authentication: 'sonar_credentials', contentType: "APPLICATION_JSON"
 httpRequest authentication: 'sonar_credentials', contentType: "APPLICATION_JSON", 
     
     httpMode: 'POST', url: "http://ec2-3-16-33-107.us-east-2.compute.amazonaws.com:9000/api/qualitygates/select?gateId=${GateId}&projectId=${ProjectId}"
-}
+*/}
 	def call(){
 def request = libraryResource 'sonarConnectorData.json'
 createRepo(request)
