@@ -5,9 +5,10 @@ createRepo(String data){
 def jsonSlurper = new JsonSlurper() 
 def resultJson = jsonSlurper.parseText(data)
 def QualityGateName = resultJson.qname
+def credentials = resultJson.cname
 //def projUrl = resultJson.url
 
-httpRequest authentication: 'sonar_credentials', contentType: "APPLICATION_JSON", 
+httpRequest authentication: '${credentials}', contentType: "APPLICATION_JSON", 
     
     httpMode: 'POST',/* requestBody: 
   """{
