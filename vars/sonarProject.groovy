@@ -10,7 +10,7 @@ def QualityGateName = resultJson.qname
 def credentials = resultJson.cname
 //def projUrl = resultJson.url
 
-httpRequest authentication: '${credentials}', contentType: "APPLICATION_JSON", 
+httpRequest authentication: ${credentials}, contentType: "APPLICATION_JSON", 
     
     httpMode: 'POST',/* requestBody: 
   """{
