@@ -8,5 +8,5 @@ def call(message)
  def jsonSlurper = new JsonSlurper() 
  def resultJson = jsonSlurper.parseText(request)
  def rpkey = resultJson.pkey
-   sh " echo '${rid}' ${message} >>log.txt"
+   sh " echo '${rpkey}' ${message} >>log.txt"
 }
