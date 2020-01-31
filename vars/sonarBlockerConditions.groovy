@@ -9,7 +9,7 @@ def credentials = resultJson.cname
 //def rid = resultJson.id
 //def projUrl = resultJson.url
 
-httpRequest authentication: '${credentials}', contentType: "APPLICATION_JSON", 
+httpRequest authentication: "${credentials}", contentType: "APPLICATION_JSON", 
     
     httpMode: 'POST',/* requestBody: 
   """{
