@@ -6,5 +6,6 @@
 "cname":"sonar_credentials",
 "colkey":"EDN25",
 "delkey":"EDN25",
+"delqid":"EDN250",
 "projectid":1
 }
