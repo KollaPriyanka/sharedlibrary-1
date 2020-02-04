@@ -2,10 +2,10 @@
 "pkey":"EDN250",
 "pname":"EDN2500",
 "qname":"EDN2500",
-"gateid":33,
+"gateid":34,
 "cname":"sonar_credentials",
 "colkey":"EDN25",
 "delkey":"EDN250",
-"delqid":33,
+"delqid":34,
 "projectid":1
 }
