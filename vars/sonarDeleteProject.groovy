@@ -8,6 +8,7 @@ def ProjectKey = resultJson.pkey
 def ProjectName = resultJson.pname
 def QualityGateName = resultJson.qname
 def credentials = resultJson.cname
+def delkey = resultJson.delkey
 //def projUrl = resultJson.url
 
 httpRequest authentication: "${credentials}", contentType: "APPLICATION_JSON", 
