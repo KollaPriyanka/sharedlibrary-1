@@ -24,7 +24,7 @@ httpRequest authentication: "${credentials}", contentType: "APPLICATION_JSON",
         "format": "maven2"
 	}
         
-   }""",*/ url: "http://ec2-3-16-33-107.us-east-2.compute.amazonaws.com:9000/api/qualitygates/destroy?id={delqid}"
+   }""",*/ url: "http://ec2-3-16-33-107.us-east-2.compute.amazonaws.com:9000/api/qualitygates/destroy?id=${delqid}"
 	
 }
 	def call(){
