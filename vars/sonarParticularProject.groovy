@@ -8,7 +8,7 @@ def colkey= resultJson.colkey
 
 httpRequest authentication: 'sonar_credentials', contentType: "APPLICATION_JSON", 
     
-    httpMode: 'GET', url: "http://3.16.33.107:9000/api/measures/component?metricKeys=ncloc,complexity,violations&component=${colkey}.json"
+    httpMode: 'GET', url: "http://3.16.33.107:9000/api/measures/component?metricKeys=ncloc,complexity,violations&component=${colkey}"
 }
 	def call(){
 def request = libraryResource 'sonarConnectorData.json'
