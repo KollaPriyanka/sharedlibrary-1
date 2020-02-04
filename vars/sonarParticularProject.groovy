@@ -4,11 +4,11 @@ import groovy.json.JsonSlurper
 detailplan(String data){
 def jsonSlurper = new JsonSlurper() 
 def resultJson = jsonSlurper.parseText(data)
-def key= resultJson.key
+def colkey= resultJson.colkey
 
 httpRequest authentication: 'sonar_credentials', contentType: "APPLICATION_JSON", 
     
-    httpMode: 'GET', url: "http://3.16.33.107:9000/api/measures/component?metricKeys=ncloc,complexity,violations&component=${key}.json"
+    httpMode: 'GET', url: "http://3.16.33.107:9000/api/measures/component?metricKeys=ncloc,complexity,violations&component=${colkey}.json"
 }
 	def call(){
 def request = libraryResource 'sonarConnectorData.json'
