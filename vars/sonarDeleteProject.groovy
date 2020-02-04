@@ -4,9 +4,6 @@ import groovy.json.JsonSlurper
 createRepo(String data){
 def jsonSlurper = new JsonSlurper() 
 def resultJson = jsonSlurper.parseText(data)
-def ProjectKey = resultJson.pkey
-def ProjectName = resultJson.pname
-def QualityGateName = resultJson.qname
 def credentials = resultJson.cname
 def delkey = resultJson.delkey
 //def projUrl = resultJson.url
